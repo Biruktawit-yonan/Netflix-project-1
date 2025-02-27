@@ -45,10 +45,11 @@ autoplay:1,
   return (
     <>
       <div className="row">
-        <h4>{title}</h4>
+        <h1>{title}</h1>
         <div className="row_posters">
           {movie?.map((movie, i) => (
             <img
+              onError={(e) => (e.target.style.display = "none")}
               onClick={() => handelClick(movie)}
               key={i}
               src={`${base_Url}${

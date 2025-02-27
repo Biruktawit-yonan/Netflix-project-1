@@ -17,20 +17,7 @@ const Banner = () => {
       });
   }, []);
   console.log(movie);
-  /*     useEffect(()=>{
-(async()=>{
-  
-  try{
-  const request= await axios.get(requests.fetchNetflixOriginals)
-  consol.log(request)
- setMove(
-  request.data.result[
-  math.floor(math.random()*request.data.result.length)]
-);
-  }
-  catch(error){
-}})()
-},[])*/
+ 
 
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
